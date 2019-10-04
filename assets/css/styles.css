@@ -1,0 +1,240 @@
+/**
+    General styles
+ */
+@charset "UTF-8";
+
+
+:root{
+    --primary: #132F40;
+    --secondary: #51868C;
+    --third: #F27D52;
+    --bg: #F2EDD0;
+    --green: #2ad573;
+    --red: #ff5640;
+    --black: #505050;
+}
+
+/**
+    Fonts import
+ */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: bold;
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+/**
+    Resets css
+ */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: .4s all ease;
+    word-break: break-word;
+    color: var(--black);
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto sans' , serif;
+}
+
+/**
+    General styles
+ */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/**
+    Bottoms styles
+ */
+
+.btn{
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #fff;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+    .btn:hover{
+        transform: translateY(-1px);
+        box-shadow: 0 5px 5px #00000014;
+    }
+    
+    .btn-green{
+        color: #fff;
+        background-color: var(--green);
+    }
+
+    .btn-outline-green{
+        border: 1px solid var(--green);
+        color: var(--green);
+        background: transparent;
+    }
+
+    .btn-outline-green:hover{
+        border: 1px solid var(--green);
+        color: #fff;
+        background: var(--green);
+    }
+
+    .btn-outline-red{
+        background: transparent;
+        border: transparent;
+        color: var(--red);
+    }
+
+
+
+/**
+    General styles of tables
+ */
+
+.table{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+    .table td, .table thead th{
+        padding: 12px 8px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+    }
+
+    .table thead th{
+        color: var(--secondary);
+        text-transform: uppercase;
+    }
+
+    .table tbody tr:hover{
+        background: rgba(0, 0, 0, 0.11);
+    }
+    
+    .table__options{
+        text-align: center;
+    }
+
+
+.panel{
+    max-width: 300px;
+    padding: 30px;
+    box-shadow: 0 5px 5px #0000000f;
+}
+
+    .panel:hover{
+        transform: translateY(-5px);
+    }
+
+/**
+    Forms styles
+ */
+.form-group{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.form-group label{
+    position: absolute;
+    left: 5px;
+    top: -2px;
+    padding: 0 5px;
+    background: #fff;
+    color: var(--black);
+    font-size: 12px;
+}
+
+.form-control{
+    border: 1px solid #00000059;
+    border-bottom: 2px solid var(--secondary);
+    padding: 14px 8px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.form-control:focus{
+    border: 2px solid var(--secondary);
+}
+
+/*=================
+Header
+=================*/
+
+.Contenedor-Div{
+    width: 100%;
+    background-color: #101010;
+    height: 150px;
+}
+.Contenedor-Div{
+
+background-image: url(../img/Fondo_Principal.jpg);
+
+}
+.Contenedor-Div h2{
+
+color:#101010;
+text-align: center;
+font-weight: bold;
+
+
+}
+.Barra-Nav{
+    padding: 25px;
+    width: calc(100% - 50px) ;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 3px;
+}
+
+
+/*=================
+Seccion
+=================*/
+
+
+.Seccion-info{
+
+    width: 80%;
+    height: 50vw;
+    margin: 50px auto;
+}
+
+.Seccion-info h1{
+ text-align: center;
+
+}
+
+.Imagen{
+    width: 200px;
+    height: 150px;
+    border: #F27D52 solid 5px;
+    margin-left: 8%;
+    margin-top:5%;
+}
+.Nombre{
+    color:var(--primary);
+    margin-top: 10px;
+    margin-left:8%;
+}
+
+
